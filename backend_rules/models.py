@@ -59,14 +59,16 @@ class Rule(Base):
     def __init__(
         self,
         gateway_id: int,
-        name: str,
+        gateway_name: str,
+        rule_name: str,
         enabled: bool,
         composite_key: list,
         field_paths: dict,
         tolerance: dict | None = None,
     ):
         self.gateway_id = gateway_id
-        self.name = name
+        self.gateway_name = gateway_name
+        self.rule_name = rule_name
         self.enabled = enabled
         self.composite_key = composite_key
         self.field_paths = field_paths

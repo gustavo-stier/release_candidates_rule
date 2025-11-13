@@ -201,21 +201,26 @@
   color: #6b6b6b;
   margin-bottom: 1rem;
 }
+/*Spacer */
+.spacer{margin-bottom: 40px}
+
 
 /* Botão */
 .gateway-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  background: #030213;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  padding: 0.6rem 1.2rem;
-  font-size: 0.9rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.2s ease;
+    display: inline-flex;
+    width: 18%;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    background: #030213;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
 }
 
 .gateway-button:hover {
@@ -317,3 +322,106 @@
   border-color: #444;
 }
 
+
+/* Grid para tolerâncias de data */
+.tolerance-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.tolerance-grid > *:nth-child(1) {
+    order: 1;
+}
+
+.tolerance-grid > *:nth-child(2) {
+    order: 3;
+}
+
+.tolerance-grid > *:nth-child(3) {
+    order: 4;
+}
+
+.tolerance-grid > *:nth-child(4) {
+    order: 2;
+}
+
+.tolerance-max-amount {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.tolerance-minimum-amount {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.date-minus-tolerance-range{
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.date-plus-tolerance-range{
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+
+.tolerance-max-amount-input {
+    width: 70%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    background: #f3f3f5;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    margin: 10 auto;
+    display: block;
+}
+
+.tolerance-minimum-amount-input{
+  width: 70%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  background: #f3f3f5;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  margin: 10 auto;
+  display: block;
+}
+
+.date-minus-tolerance-range-input{
+  width: 70%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  background: #f3f3f5;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  margin: 10 auto;
+  display: block;
+}
+
+.date-plus-tolerance-range-input{
+  width: 70%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  background: #f3f3f5;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  margin: 10 auto;
+  display: block;
+}
